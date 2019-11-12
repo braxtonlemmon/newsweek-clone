@@ -37,15 +37,22 @@ h4 {
 	font: bold 17px/21px "Roboto Condensed", sans-serif;
 	color: black;
 }
+
 /*
 	===========================
 	HEADER
 	===========================
 */
-
-nav {
+.header {
+	width: 100%;
+}
+.header:first-child {
 	background-color: #f82512;
-	height: 50px;
+}
+
+.header p {
+	color: white;
+	font: 16px/34px "Roboto Condensed", sans-serif;
 }
 
 nav .navbar-brand {
@@ -66,16 +73,28 @@ nav .navbar-brand {
 	color: #fb9a94 ;
 }
 
+.header:last-child {
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
 .navbar-dark
 .navbar-nav
 .nav-link {
 	color: black;
-	padding-left: 10px;
+		padding-left: 10px;
 }
 
 .nav-item {
 	font-size: 21px;
 	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid lightgrey;
+}
+
+.nav-item:last-child {
+	border: none;
 }
 
 /* 
@@ -83,9 +102,7 @@ nav .navbar-brand {
 	MAIN SECTION
 	=====================
 */ 
-.main {
-	top: 60px;
-}
+
 
 .block-title {
 	color: rgba(3,3,3,0.4);
@@ -333,4 +350,12 @@ nav .navbar-brand {
 
 .footer-links {
 	color: #666;
+}
+
+@media (min-width: 992px) {
+	nav .navbar-brand {
+		width: 396px;
+		height: 60px;
+		margin: 10px auto 0;
+	}
 }
