@@ -218,6 +218,10 @@ nav .navbar-brand {
 	margin-top: 4px;
 }
 
+.opinions .card-img {
+	height: 63px;
+	width: 63px;
+}
 /*
 	=========================
 	MAGAZINE
